@@ -8,6 +8,9 @@ var episode_router_1 = require("./episode-router");
 var user_router_1 = require("./user-router");
 var router = express.Router();
 exports.default = (function () {
+    router.get("/", function (req, res) {
+        res.send({ data: "OK" });
+    });
     (0, stream_router_1.default)(router);
     (0, anime_router_1.default)(router);
     (0, trailer_router_1.default)(router);
