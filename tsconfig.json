@@ -1,12 +1,18 @@
 {
     "CompilerOptions": {
-        "module": "NodeNext",
+        "module": "commonjs",
         "moduleResolution": "node",
-        "baseUrl": "src",
-        "outDir": "dist",
         "sourceMap": true,
         "noImplicitAny": true,
-
+        "strict": true,  
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "lib": ["es2015"],
+        "target": "es6",
     },
     "include": ["src/**/*"],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ]
 }
